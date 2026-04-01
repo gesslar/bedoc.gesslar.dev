@@ -9,7 +9,7 @@ export default defineConfig({
       logo: {
         src: './src/assets/project-management.png',
       },
-      favicon: '/favicon.ico',
+      favicon: '/img/favicon.svg',
       customCss: [
         './src/styles/custom.css',
       ],
