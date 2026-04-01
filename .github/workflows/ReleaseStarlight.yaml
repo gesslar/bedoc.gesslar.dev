@@ -5,6 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   deploy-docs:
     uses: gesslar/Maint/.github/workflows/ReleaseStarlight.yaml@main
