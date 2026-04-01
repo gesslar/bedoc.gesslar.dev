@@ -1,0 +1,32 @@
+/* Custom styles for BeDoc Starlight site */
+
+:root {
+  --sl-color-accent-low: #002e5c;
+  --sl-color-accent: #004284;
+  --sl-color-accent-high: #6cb6ff;
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #002e5c;
+  --sl-color-accent: #6cb6ff;
+  --sl-color-accent-high: #d9ecff;
+}
+
+/* Badge pills used in parsers.md */
+.pill {
+  border-radius: 10px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 65%;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.2em 0.6em;
+}
+
+.pill.badge--danger {
+  background-color: #e74c3c;
+}
+
+.pill.badge--warning {
+  background-color: #f39c12;
+}

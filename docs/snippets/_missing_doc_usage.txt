@@ -1,8 +1,0 @@
----
-title: Logger
-parent: Tools
----
-
-import Cliffhanger from "/docs/snippets/_missing-doc.md"
-
-<Cliffhanger />
