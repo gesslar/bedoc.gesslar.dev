@@ -17,34 +17,28 @@ const config = {
   tagline: 'Bespoke Documentation',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://bedoc.gesslar.dev/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'gesslar', // Usually your GitHub org/user name.
-  projectName: 'BeDocs', // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  organizationName: 'gesslar',
+  projectName: 'BeDocs',
 
   onBrokenLinks: 'throw',
   onBrokenAnchors: "throw",
-  onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: "throw",
 
   trailingSlash: false,
 
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownImages: "throw",
+      onBrokenMarkdownLinks: "throw",
+    }
   },
+
   themes: ['@docusaurus/theme-mermaid'],
 
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -75,7 +69,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+
       image: 'img/project-management.png',
+
       scrollToTop: true,
       scrollToTopOptions: {
         zIndex: 100,
@@ -135,7 +136,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [],
-        copyright: `🙅🏻<del>Copyright ©${new Date().getFullYear()}</del>🙅🏻<br /><a href="https://unlicense.org"/>Unlicensed</a> BeDoc. Built with Docusaurus.`,
+        copyright: `🙅🏻<del>Copyright ©${new Date().getFullYear()}</del>🙅🏻<br /><a href="https://unlicense.org"/>Unlicense</a>. Built with Docusaurus.`,
       },
 
       prism: {
@@ -159,12 +160,6 @@ const config = {
         ],
         theme: PrismLight,
         darkTheme: PrismDark,
-      },
-
-      colorMode: {
-        defaultMode: "dark",
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
       },
 
       // announcementBar: {

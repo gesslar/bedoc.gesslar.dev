@@ -3,8 +3,6 @@ title: Testimonials
 hide_title: true
 ---
 
-# Testimonials
-
 The following are reviews of BeDoc from my friends and close associates (but,
 not my mom, though, because that would be spooky). If you don't want to take
 my word for how amazingly your documentation journey will improve with BeDoc,

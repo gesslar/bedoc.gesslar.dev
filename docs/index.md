@@ -31,6 +31,7 @@ existing tools don’t.
 ## Quick Start
 
 ### 1. Install BeDoc
+
 ```bash
 # Install globally
 npm i -g bedoc
@@ -40,13 +41,16 @@ npm i --save-dev bedoc
 ```
 
 ### 2. Generate Documentation
+
 ```bash
 # Example: Generate Markdown docs for JavaScript files
 bedoc -l javascript -f markdown -i src/**/*.js -o docs
 ```
 
 ### 3. Use a Config File
+
 Simplify your workflow with a configuration file:
+
 ```json
 {
   "language": "javascript",
@@ -55,7 +59,9 @@ Simplify your workflow with a configuration file:
   "output": "docs"
 }
 ```
+
 Run with:
+
 ```bash
 bedoc -c bedoc.config.json
 ```
@@ -65,14 +71,17 @@ bedoc -c bedoc.config.json
 ## Key Use Cases
 
 ### Documenting APIs
+
 Generate clear and structured API documentation for languages and frameworks
 that lack built-in tools.
 
 ### Supporting Niche Formats
+
 Convert code comments to Markdown, Wikitext, or other less common formats
 seamlessly.
 
 ### Automating Workflows
+
 Integrate BeDoc into CI/CD pipelines with GitHub Actions or similar tools to
 keep documentation up-to-date.
 
